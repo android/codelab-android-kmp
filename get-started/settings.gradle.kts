@@ -23,9 +23,9 @@ pluginManagement {
                 includeGroupAndSubgroups("com.android")
                 includeGroupAndSubgroups("com.google")
             }
-            gradlePluginPortal()
-            mavenCentral()
         }
+        gradlePluginPortal()
+        mavenCentral()
     }
 }
 
