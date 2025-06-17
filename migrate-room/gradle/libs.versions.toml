@@ -34,7 +34,7 @@ androidx-junit = "1.2.1"
 turbine = "1.2.1"
 androidx-sqlite = "2.5.1"
 core = "1.6.1"
-skie = "0.10.1"
+skie = "0.10.2"
 
 [libraries]
 # TODO add room-runtime and sqlite-bundled dependencies
