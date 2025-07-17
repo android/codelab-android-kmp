@@ -23,7 +23,7 @@ androidx-lifecycle = "2.8.7"
 kotlin = "2.2.0"
 kotlinx-coroutines = "1.10.2"
 spotless = "7.1.0"
-composeBom = "2025.06.01"
+composeBom = "2025.07.00"
 ktlint = "1.3.1"
 
 
