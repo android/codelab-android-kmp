@@ -52,6 +52,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2DCC1BFC2D4100C80017AC11 /* Build configuration list for PBXNativeTarget "KMPGetStartedCodelab" */;
 			buildPhases = (
+				04FEC8AD2E978654000D2A5F /* Compile Kotlin Framework  */,
 				2DCC1BEA2D4100C60017AC11 /* Sources */,
 				2DCC1BEB2D4100C60017AC11 /* Frameworks */,
 				2DCC1BEC2D4100C60017AC11 /* Resources */,
@@ -113,6 +114,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04FEC8AD2E978654000D2A5F /* Compile Kotlin Framework  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Kotlin Framework ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$SRCROOT/..\"\n./gradlew :shared:embedAndSignAppleFrameworkForXcode\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2DCC1BEA2D4100C60017AC11 /* Sources */ = {
