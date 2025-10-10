@@ -17,6 +17,7 @@ package com.example.fruitties.kmptutorial.android.di
 
 import android.content.Context
 import androidx.room.Room
+import androidx.sqlite.driver.bundled.BundledSQLiteDriver
 import com.example.fruitties.kmptutorial.android.database.AppDatabase
 import dagger.Module
 import dagger.Provides
@@ -31,9 +32,12 @@ internal object DatabaseModule {
 
     @Provides
     @Singleton
-    fun providesAppDatabase(@ApplicationContext context: Context): AppDatabase = Room
-        .databaseBuilder(context, AppDatabase::class.java, "sharedfruits.db")
-        .build()
+    fun providesAppDatabase(@ApplicationContext context: Context): AppDatabase {
+        val dbFile = context.getDatabasePath("sharedfruits.db")
+        return Room.databaseBuilder<AppDatabase>(context, dbFile.absolutePath)
+            .setDriver(BundledSQLiteDriver())
+            .build()
+    }
 
     @Provides
     fun providesFruittieDao(appDatabase: AppDatabase) = appDatabase.fruittieDao()
