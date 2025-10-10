@@ -30,6 +30,7 @@ kotlinTest = "2.2.0"
 runner = "1.5.2"
 core = "1.5.0"
 junit = "1.1.5"
+skie = "0.10.6"
 
 
 [libraries]
@@ -59,3 +60,4 @@ spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
 kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
 androidLint = { id = "com.android.lint", version.ref = "agp" }
+skie = { id = "co.touchlab.skie", version.ref = "skie" }

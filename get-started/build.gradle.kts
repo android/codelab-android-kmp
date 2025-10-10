@@ -25,6 +25,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform) apply false
     alias(libs.plugins.androidKotlinMultiplatformLibrary) apply false
     alias(libs.plugins.androidLint) apply false
+    alias(libs.plugins.skie) apply false
 }
 
 subprojects {
