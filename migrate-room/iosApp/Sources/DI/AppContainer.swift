@@ -15,7 +15,7 @@
  */
 
 import Combine
-import CoreData
+import sharedKit
 import Foundation
 
 class AppContainer: ObservableObject {
@@ -23,10 +23,6 @@ class AppContainer: ObservableObject {
     let api: FruittieApi
     let fruittieRepository: FruittieRepository
     let cartRepository: CartRepository
-
-    var managedObjectContext: NSManagedObjectContext {
-        dataController.container.viewContext
-    }
 
     init() {
         dataController = DataController()
@@ -36,11 +32,11 @@ class AppContainer: ObservableObject {
                     "https://android.github.io/kotlin-multiplatform-samples/fruitties-api"
             )!)
         fruittieRepository = DefaultFruittieRepository(
-            managedObjectContext: dataController.container.viewContext,
+            fruittieDao: dataController.database.fruittieDao() ,
             api: api
         )
         cartRepository = DefaultCartRepository(
-            managedObjectContext: dataController.container.viewContext
+            cartDao: dataController.database.cartDao()
         )
     }
 }

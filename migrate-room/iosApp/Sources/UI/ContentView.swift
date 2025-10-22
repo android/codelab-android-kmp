@@ -35,7 +35,7 @@ struct ContentView: View {
             .font(.largeTitle)
             .fontWeight(.bold)
 
-        CartView()
+        CartView(uiModel: uiModel)
 
         ScrollView {
             LazyVStack {

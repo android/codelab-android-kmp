@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C0352D2EA7FA77004B0531 /* Fruittie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0352C2EA7FA77004B0531 /* Fruittie.swift */; };
+		04C0352F2EA8070B004B0531 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C0352E2EA8070B004B0531 /* CartItem.swift */; };
 		058557BB273AAA24004C7B11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557BA273AAA24004C7B11 /* Assets.xcassets */; };
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		1800B0E02CBFFD6B0035D9C5 /* AsyncStreamNSFetchRequestResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1800B0DA2CBFFD6B0035D9C5 /* AsyncStreamNSFetchRequestResultTests.swift */; };
@@ -23,7 +25,6 @@
 		183004822CACE30F001DF9CA /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183004812CACE30F001DF9CA /* ContentViewModel.swift */; };
 		183004922CB700CA001DF9CA /* CartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183004912CB700C9001DF9CA /* CartRepository.swift */; };
 		186680822CBEB6240047633B /* ConcurrencyExtras in Frameworks */ = {isa = PBXBuildFile; productRef = 186680812CBEB6240047633B /* ConcurrencyExtras */; };
-		187640EF2CAB2915002A80F7 /* Fruitties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 187640ED2CAB2915002A80F7 /* Fruitties.xcdatamodeld */; };
 		1885088B2CB99134003F8D5E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1885088A2CB99117003F8D5E /* main.swift */; };
 		18C09F492CC1585800B22F47 /* MockFruittieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C09F482CC1585800B22F47 /* MockFruittieRepository.swift */; };
 		18C09F4D2CC1591500B22F47 /* FakeCartRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C09F4C2CC1590F00B22F47 /* FakeCartRepository.swift */; };
@@ -57,6 +58,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		04C0352C2EA7FA77004B0531 /* Fruittie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruittie.swift; sourceTree = "<group>"; };
+		04C0352E2EA8070B004B0531 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
 		058557BA273AAA24004C7B11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1800B0DA2CBFFD6B0035D9C5 /* AsyncStreamNSFetchRequestResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamNSFetchRequestResultTests.swift; sourceTree = "<group>"; };
@@ -72,7 +75,6 @@
 		1830047F2CACE2FC001DF9CA /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		183004812CACE30F001DF9CA /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		183004912CB700C9001DF9CA /* CartRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartRepository.swift; sourceTree = "<group>"; };
-		187640EE2CAB2915002A80F7 /* Fruitties.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Fruitties.xcdatamodel; sourceTree = "<group>"; };
 		188508792CB71FC8003F8D5E /* FruittiesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FruittiesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1885088A2CB99117003F8D5E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		18C09F482CC1585800B22F47 /* MockFruittieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFruittieRepository.swift; sourceTree = "<group>"; };
@@ -130,6 +132,8 @@
 			children = (
 				1830047D2CACE2C6001DF9CA /* FruittieRepository.swift */,
 				183004912CB700C9001DF9CA /* CartRepository.swift */,
+				04C0352C2EA7FA77004B0531 /* Fruittie.swift */,
+				04C0352E2EA8070B004B0531 /* CartItem.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -173,7 +177,6 @@
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
-				187640ED2CAB2915002A80F7 /* Fruitties.xcdatamodeld */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -395,11 +398,12 @@
 				2E8773602BC85C2400BF7C40 /* CartView.swift in Sources */,
 				1830047E2CACE2C7001DF9CA /* FruittieRepository.swift in Sources */,
 				2DCC1BDB2D3E90BD0017AC11 /* FruittiesResponse.swift in Sources */,
-				187640EF2CAB2915002A80F7 /* Fruitties.xcdatamodeld in Sources */,
 				183004822CACE30F001DF9CA /* ContentViewModel.swift in Sources */,
 				183004922CB700CA001DF9CA /* CartRepository.swift in Sources */,
 				1830047C2CACE2B0001DF9CA /* AppContainer.swift in Sources */,
+				04C0352F2EA8070B004B0531 /* CartItem.swift in Sources */,
 				183004742CAC5744001DF9CA /* FruittieApi.swift in Sources */,
+				04C0352D2EA7FA77004B0531 /* Fruittie.swift in Sources */,
 				183004802CACE2FD001DF9CA /* DataController.swift in Sources */,
 				1885088B2CB99134003F8D5E /* main.swift in Sources */,
 				183004762CACE153001DF9CA /* AsyncStream+NSFetchRequestResult.swift in Sources */,
@@ -684,19 +688,6 @@
 			productName = ConcurrencyExtras;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		187640ED2CAB2915002A80F7 /* Fruitties.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				187640EE2CAB2915002A80F7 /* Fruitties.xcdatamodel */,
-			);
-			currentVersion = 187640EE2CAB2915002A80F7 /* Fruitties.xcdatamodel */;
-			path = Fruitties.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 7555FF73242A565900829871 /* Project object */;
 }

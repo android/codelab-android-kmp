@@ -31,7 +31,6 @@ struct FruittiesApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(appContainer: appContainer)
-                .environment(\.managedObjectContext, appContainer.dataController.container.viewContext)
         }
     }
 }
