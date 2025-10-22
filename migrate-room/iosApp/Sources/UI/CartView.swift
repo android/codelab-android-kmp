@@ -20,15 +20,15 @@ struct CartView : View {
     @State
     private var expanded = false
 
-    @FetchRequest(sortDescriptors: [])
-    private var cartItems: FetchedResults<CartItem>
+    @ObservedObject
+    private(set) var uiModel: ContentViewModel
 
     var body: some View {
-        if (cartItems.isEmpty) {
+        if (uiModel.cartItems.isEmpty) {
             Text("Cart is empty, add some items").padding()
         } else {
             HStack {
-                Text("Cart has \(cartItems.reduce(0){$0 + $1.count}) items of \(cartItems.count) types of fruit")
+                Text("Cart has \(uiModel.cartItems.reduce(0){$0 + $1.count}) items of \(uiModel.cartItems.count) types of fruit")
                     .padding()
 
                 Spacer()
@@ -46,7 +46,7 @@ struct CartView : View {
             }
             if (expanded) {
                 VStack {
-                    ForEach(cartItems, id: \.self) { item in
+                    ForEach(uiModel.cartItems, id: \.self) { item in
                         Text("\(item.fruittie!.name!): \(item.count)")
                     }
                 }

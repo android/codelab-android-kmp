@@ -14,7 +14,7 @@ import ConcurrencyExtras
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import CoreData
+import sharedKit
 
 protocol CartRepository {
     func addToCart(fruittie: Fruittie) async throws
@@ -23,41 +23,19 @@ protocol CartRepository {
 }
 
 class DefaultCartRepository: CartRepository {
-    private let managedObjectContext: NSManagedObjectContext
+    private let cartDao: CartDao
 
-    init(managedObjectContext: NSManagedObjectContext) {
-        self.managedObjectContext = managedObjectContext
+    init(cartDao: CartDao) {
+        self.cartDao = cartDao
     }
 
     func addToCart(fruittie: Fruittie) async throws {
-        let context = managedObjectContext
-        try await context.perform {
-            let request = CartItem.fetchRequest()
-            request.predicate = NSPredicate(format: "fruittie == %@", fruittie)
-            let results = try context.fetch(request)
-
-            if results.isEmpty {
-                let newItem = CartItem(context: context)
-                newItem.fruittie = fruittie
-                newItem.count = 1
-            } else {
-                if results.count > 1 {
-                    print(
-                        "Warning: Multiple CartItem for Fruittie \(fruittie.name!)"
-                    )
-                }
-
-                results.forEach {
-                    $0.count += 1
-                }
-            }
-
-            try context.save()
-        }
+        try await cartDao.insertOrIncreaseCount(fruittie: fruittie.entity)
     }
 
     func getCartItems() -> AsyncStream<[CartItem]> {
-        return AsyncStream.resultsStream(
-            request: CartItem.fetchRequest(), in: managedObjectContext)
+        return cartDao.getAll().map { entities in
+                entities.map(CartItem.init(entity:))
+            }.eraseToStream()
     }
 }
