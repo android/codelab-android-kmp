@@ -1,0 +1,47 @@
+# foundationBridge.def
+#
+# Cinterop definition for the Foundation iOS bridge.
+# Declares the ObjC protocols that the iOS host application implements;
+# Kotlin code in foundationKit uses the generated bindings to call into
+# host-app-provided platform capabilities.
+#
+# The host app registers concrete implementations at startup:
+#   BridgeSetupKt.configureFoundationBridge(provider: AppPlatformProvider())
+#   BridgeSetupKt.configureFoundationLogger(delegate: AppLoggerDelegate())
+#
+# STORAGE DESIGN: Provider/delegate references are held in ObjC-level static
+# vars accessed through C functions (below the --- separator).  Using Kotlin
+# `internal var` would generate arm64_adrp_lo12 fixups (PC-relative, same-dylib
+# only) that break when businessKit links against foundationKit as an external
+# XCFramework.  C function calls go through the PLT/GOT and are cross-dylib safe.
+
+language = Objective-C
+headers = KMPFoundationBridge.h \
+          KMPFoundationBridgeLogger.h
+
+---
+#import "KMPFoundationBridge.h"
+#import "KMPFoundationBridgeLogger.h"
+
+// Module-level ObjC storage for bridge-registered providers.
+// These are intentionally file-static (translation-unit scope); access is only
+// through the getter/setter functions declared in the headers.
+
+static id<KMPPlatformInfoProvider> __kmp_platformProvider = nil;
+static id<KMPLoggerDelegate>       __kmp_loggerDelegate   = nil;
+
+id<KMPPlatformInfoProvider> KMPGetPlatformProvider(void) {
+    return __kmp_platformProvider;
+}
+
+void KMPSetPlatformProvider(id<KMPPlatformInfoProvider> provider) {
+    __kmp_platformProvider = provider;
+}
+
+id<KMPLoggerDelegate> KMPGetLoggerDelegate(void) {
+    return __kmp_loggerDelegate;
+}
+
+void KMPSetLoggerDelegate(id<KMPLoggerDelegate> delegate) {
+    __kmp_loggerDelegate = delegate;
+}

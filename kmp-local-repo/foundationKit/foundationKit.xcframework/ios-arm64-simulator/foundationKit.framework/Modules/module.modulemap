@@ -1,0 +1,8 @@
+framework module "foundationKit" {
+    umbrella header "foundationKit.h"
+
+    export *
+    module * { export * }
+
+    use Foundation
+}

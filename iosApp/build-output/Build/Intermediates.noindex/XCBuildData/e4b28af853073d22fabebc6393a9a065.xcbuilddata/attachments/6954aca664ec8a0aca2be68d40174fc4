@@ -1,0 +1,49 @@
+{
+  "" : {
+    "diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelab-primary.dia",
+    "emit-module-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelab-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelab-primary-emit-module.dia",
+    "pch" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelab-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelab-primary.swiftdeps"
+  },
+  "/Users/bytedance/codelab-android-kmp/get-started/iosApp/KMPGetStartedCodelab/ContentView.swift" : {
+    "const-values" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/bytedance/codelab-android-kmp/get-started/iosApp/KMPGetStartedCodelab/KMPGetStartedCodelabApp.swift" : {
+    "const-values" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.swiftconstvalues",
+    "dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.d",
+    "diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.dia",
+    "index-unit-output-path" : "/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.o",
+    "llvm-bc" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.bc",
+    "object" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.o",
+    "swift-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp.swiftdeps",
+    "swiftmodule" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/KMPGetStartedCodelabApp~partial.swiftmodule"
+  },
+  "/Users/bytedance/codelab-android-kmp/get-started/iosApp/KMPGetStartedCodelab/RuntimeDuplicateTest.swift" : {
+    "const-values" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.swiftconstvalues",
+    "dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.d",
+    "diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.dia",
+    "index-unit-output-path" : "/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.o",
+    "llvm-bc" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.bc",
+    "object" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.o",
+    "swift-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest.swiftdeps",
+    "swiftmodule" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/RuntimeDuplicateTest~partial.swiftmodule"
+  },
+  "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/bytedance/codelab-android-kmp/get-started/iosApp/build-output/Build/Intermediates.noindex/KMPGetStartedCodelab.build/Debug-iphonesimulator/KMPGetStartedCodelab.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

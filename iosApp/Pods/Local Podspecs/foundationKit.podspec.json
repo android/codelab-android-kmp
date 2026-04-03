@@ -1,0 +1,23 @@
+{
+  "name": "foundationKit",
+  "version": "0.1.0",
+  "summary": "KMP Foundation XCFramework — runtime, stdlib, base capabilities",
+  "description": "Kotlin Multiplatform Foundation module.\nEmbeds Kotlin/Native runtime and stdlib. Must be loaded before any other KMP framework.",
+  "homepage": "https://github.com/example/kmp-get-started",
+  "license": {
+    "type": "Apache-2.0"
+  },
+  "authors": {
+    "KMP Team": "kmp@example.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "vendored_frameworks": "foundationKit.xcframework",
+  "dependencies": {
+    "foundationBridge": []
+  }
+}

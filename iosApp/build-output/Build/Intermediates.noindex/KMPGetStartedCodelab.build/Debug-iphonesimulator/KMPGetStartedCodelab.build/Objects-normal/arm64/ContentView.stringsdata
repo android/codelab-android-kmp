@@ -1,0 +1,104 @@
+{
+  "source": "/Users/bytedance/codelab-android-kmp/iosApp/KMPGetStartedCodelab/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "KMP V3 Demo",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 120
+        }
+      },
+      {
+        "comment": "",
+        "key": "User: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bridge Round-Trip Demo",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "KMT-2364 externalKlibs Fix",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 80
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cross-Framework Tests",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 97
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hello, %@!",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 38
+        }
+      },
+      {
+        "comment": "",
+        "key": "Swift → Kotlin → ObjC bridge → Kotlin → Swift",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Calling ObjC bridge...",
+        "location": {
+          "startingColumn": 58,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fetch Profile via Bridge",
+        "location": {
+          "startingColumn": 85,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type Tests",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "GC Tests",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 104
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Tests",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 107
+        }
+      }
+    ]
+  },
+  "version": 1
+}

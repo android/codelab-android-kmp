@@ -1,0 +1,9 @@
+Target dependency graph (4 targets)
+Target 'KMPGetStartedCodelab' in project 'KMPGetStartedCodelab'
+➜ Implicit dependency on target 'Pods-KMPGetStartedCodelab' in project 'Pods' via file 'Pods_KMPGetStartedCodelab.framework' in build phase 'Link Binary'
+Target 'Pods-KMPGetStartedCodelab' in project 'Pods'
+➜ Explicit dependency on target 'businessKit' in project 'Pods'
+➜ Explicit dependency on target 'foundationKit' in project 'Pods'
+Target 'businessKit' in project 'Pods'
+➜ Explicit dependency on target 'foundationKit' in project 'Pods'
+Target 'foundationKit' in project 'Pods' (no dependencies)

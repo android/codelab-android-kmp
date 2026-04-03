@@ -45,3 +45,9 @@ dependencyResolutionManagement {
 
 rootProject.name = "KmpGetStartedCodelab"
 include(":androidApp")
+include(":foundation:foundationCommon")
+include(":foundation:KMPFoundation")
+include(":foundation:foundation-bridge")
+include(":business:businessCommon")
+include(":business:KMPBusiness")
+include(":business:business-bridge")

@@ -1,0 +1,6 @@
+framework module foundationBridgeImpl {
+  umbrella header "foundationBridgeImpl-umbrella.h"
+
+  export *
+  module * { export * }
+}

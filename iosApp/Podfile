@@ -1,0 +1,72 @@
+platform :ios, '14.0'
+use_frameworks!
+
+# ─── 说明 ─────────────────────────────────────────────────────────────────────
+#
+# iOS 工程与 Android/KMP 工程 (get-started/) 完全独立，无任何源码路径依赖。
+#
+# 依赖层次（全部在 iOS 工程目录内或 kmp-local-repo/ 二进制仓库中）：
+#
+#   iOS 工程源码 pod（iOS 团队拥有）：
+#     ./foundationBridge      header-only pod，ObjC 协议声明（契约定义）
+#     ./businessBridge        header-only pod，ObjC 协议声明（契约定义）
+#     ./foundationBridgeImpl  ObjC 实现 pod（AppPlatformProvider / AppLoggerDelegate）
+#     ./businessBridgeImpl    ObjC 实现 pod（AppAuthDelegate / AppNetworkDelegate）
+#
+#   kmp-local-repo/ 二进制 pod（KMP 团队发布，iOS 团队消费）：
+#     ../kmp-local-repo/foundationKit   XCFramework，depends on foundationBridge
+#     ../kmp-local-repo/businessKit     XCFramework，depends on businessBridge
+#
+# 发布 KMP 产物到本地仓库（在 get-started/ 目录下执行）：
+#   ./gradlew publishKMPIOSDebug
+# ─────────────────────────────────────────────────────────────────────────────
+
+target 'KMPGetStartedCodelab' do
+
+  # ── iOS 侧源码 pod：契约头文件（iOS 团队拥有，头文件内容与 KMP cinterop 一致）──
+  pod 'foundationBridge', :path => './foundationBridge'
+  pod 'businessBridge',   :path => './businessBridge'
+
+  # ── iOS 侧源码 pod：ObjC 协议实现（iOS 团队拥有）──────────────────────────
+  pod 'foundationBridgeImpl', :path => './foundationBridgeImpl'
+  pod 'businessBridgeImpl',   :path => './businessBridgeImpl'
+
+  # ── 从本地二进制仓库消费 KMP XCFramework（无源码依赖）────────────────────
+  pod 'foundationKit', :path => '../kmp-local-repo/foundationKit'
+  pod 'businessKit',   :path => '../kmp-local-repo/businessKit'
+
+end
+
+# KMT-2364: Fix "Unable to find module dependency" on clean DerivedData builds.
+#
+# Xcode 15+ Explicit Module Build plans Swift module dependencies BEFORE any Build
+# Phase runs. CocoaPods' xcframeworks.sh (which copies the correct XCFramework slice
+# to XCFrameworkIntermediates) is a Build Phase — so on a clean build the intermediates
+# directory is empty when planning happens, and Xcode can't find foundationKit/businessKit.
+#
+# Fix: add the kmp-local-repo XCFramework slice directories to FRAMEWORK_SEARCH_PATHS
+# so .swiftmodule files are findable at planning time regardless of DerivedData state.
+post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    next unless target.name == 'KMPGetStartedCodelab'
+    target.build_configurations.each do |config|
+      extra = [
+        "\"$(PODS_ROOT)/../../kmp-local-repo/foundationKit/foundationKit.xcframework/ios-arm64-simulator\"",
+        "\"$(PODS_ROOT)/../../kmp-local-repo/foundationKit/foundationKit.xcframework/ios-arm64\"",
+        "\"$(PODS_ROOT)/../../kmp-local-repo/businessKit/businessKit.xcframework/ios-arm64-simulator\"",
+        "\"$(PODS_ROOT)/../../kmp-local-repo/businessKit/businessKit.xcframework/ios-arm64\"",
+      ]
+      config.build_settings['FRAMEWORK_SEARCH_PATHS'] = [
+        '$(inherited)',
+        *extra
+      ].join(' ')
+    end
+  end
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+      target.build_configurations.each do |config|
+        config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '14.0'
+      end
+    end
+  end
+end

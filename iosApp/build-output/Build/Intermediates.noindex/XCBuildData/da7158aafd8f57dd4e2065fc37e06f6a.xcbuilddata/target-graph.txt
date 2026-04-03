@@ -1,0 +1,23 @@
+Target dependency graph (8 targets)
+Target 'KMPGetStartedCodelab' in project 'KMPGetStartedCodelab'
+➜ Implicit dependency on target 'Pods-KMPGetStartedCodelab' in project 'Pods' via file 'Pods_KMPGetStartedCodelab.framework' in build phase 'Link Binary'
+➜ Implicit dependency on target 'businessBridgeImpl' in project 'Pods' via options '-framework businessBridgeImpl' in build setting 'OTHER_LDFLAGS'
+➜ Implicit dependency on target 'foundationBridgeImpl' in project 'Pods' via options '-framework foundationBridgeImpl' in build setting 'OTHER_LDFLAGS'
+Target 'Pods-KMPGetStartedCodelab' in project 'Pods'
+➜ Explicit dependency on target 'businessBridge' in project 'Pods'
+➜ Explicit dependency on target 'businessBridgeImpl' in project 'Pods'
+➜ Explicit dependency on target 'businessKit' in project 'Pods'
+➜ Explicit dependency on target 'foundationBridge' in project 'Pods'
+➜ Explicit dependency on target 'foundationBridgeImpl' in project 'Pods'
+➜ Explicit dependency on target 'foundationKit' in project 'Pods'
+Target 'foundationBridgeImpl' in project 'Pods'
+➜ Explicit dependency on target 'foundationBridge' in project 'Pods'
+Target 'businessKit' in project 'Pods'
+➜ Explicit dependency on target 'businessBridge' in project 'Pods'
+➜ Explicit dependency on target 'foundationKit' in project 'Pods'
+Target 'foundationKit' in project 'Pods'
+➜ Explicit dependency on target 'foundationBridge' in project 'Pods'
+Target 'foundationBridge' in project 'Pods' (no dependencies)
+Target 'businessBridgeImpl' in project 'Pods'
+➜ Explicit dependency on target 'businessBridge' in project 'Pods'
+Target 'businessBridge' in project 'Pods' (no dependencies)

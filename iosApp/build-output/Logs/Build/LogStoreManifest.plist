@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>D09FB0BA-06D0-4774-87A9-DBD1EAD8DA87</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D09FB0BA-06D0-4774-87A9-DBD1EAD8DA87.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>6</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>KMPGetStartedCodelab project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>KMPGetStartedCodelab</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Building workspace KMPGetStartedCodelab with scheme KMPGetStartedCodelab and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>796867998.25539005</real>
+			<key>timeStoppedRecording</key>
+			<real>796868003.11695397</real>
+			<key>title</key>
+			<string>Building workspace KMPGetStartedCodelab with scheme KMPGetStartedCodelab and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>D09FB0BA-06D0-4774-87A9-DBD1EAD8DA87</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

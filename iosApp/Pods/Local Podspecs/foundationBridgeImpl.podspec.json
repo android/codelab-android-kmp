@@ -1,0 +1,28 @@
+{
+  "name": "foundationBridgeImpl",
+  "version": "0.1.0",
+  "summary": "Concrete ObjC implementations of the KMP Foundation bridge protocols",
+  "description": "Provides AppPlatformProvider and AppLoggerDelegate — ready-to-use ObjC classes that\nimplement the foundationBridge protocols. Link this pod in your iOS app and pass\ninstances to BridgeSetupKt.configureFoundationBridge / configureFoundationLogger at startup.",
+  "homepage": "https://github.com/example/kmp-get-started",
+  "license": {
+    "type": "Apache-2.0"
+  },
+  "authors": {
+    "KMP Team": "kmp@example.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": [
+    "headers/*.h",
+    "sources/*.m"
+  ],
+  "public_header_files": "headers/*.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "foundationBridge": []
+  }
+}

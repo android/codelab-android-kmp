@@ -1,0 +1,5 @@
+.idea/
+.DS_Store
+
+# K/N runtime export symbol lists (generated)
+get-started/foundation/*_runtime_exports.txt

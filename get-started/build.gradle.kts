@@ -22,6 +22,43 @@ plugins {
     alias(libs.plugins.kotlinAndroid) apply false
     alias(libs.plugins.kotlinCompose) apply false
     alias(libs.plugins.spotless) apply false
+    alias(libs.plugins.kotlinMultiplatform) apply false
+    alias(libs.plugins.androidKotlinMultiplatformLibrary) apply false
+    alias(libs.plugins.androidLint) apply false
+}
+
+// ─── KMP → iOS 本地二进制仓库发布（聚合任务）────────────────────────────────
+// 一键将 foundation + business 的 XCFramework 和桥接头文件发布到 kmp-local-repo/，
+// iOS 工程随后执行 pod install 即可消费最新产物，无需接触 KMP 源码。
+//
+// 用法：
+//   ./gradlew publishKMPIOSDebug    # 发布 debug 产物
+//   ./gradlew publishKMPIOSRelease  # 发布 release 产物
+
+tasks.register("publishKMPIOSDebug") {
+    description = "Publish all KMP iOS debug XCFrameworks to kmp-local-repo/"
+    group = "kotlin multiplatform"
+    dependsOn(
+        ":foundation:KMPFoundation:publishIOSDebug",
+        ":business:KMPBusiness:publishIOSDebug",
+    )
+    doLast {
+        println("✅ All KMP iOS debug artifacts published to kmp-local-repo/")
+        println("   Next: cd ../iosApp && pod install")
+    }
+}
+
+tasks.register("publishKMPIOSRelease") {
+    description = "Publish all KMP iOS release XCFrameworks to kmp-local-repo/"
+    group = "kotlin multiplatform"
+    dependsOn(
+        ":foundation:KMPFoundation:publishIOSRelease",
+        ":business:KMPBusiness:publishIOSRelease",
+    )
+    doLast {
+        println("✅ All KMP iOS release artifacts published to kmp-local-repo/")
+        println("   Next: cd ../iosApp && pod install")
+    }
 }
 
 subprojects {

@@ -1,0 +1,46 @@
+PODS:
+  - businessBridge (0.1.0)
+  - businessBridgeImpl (0.1.0):
+    - businessBridge
+  - businessKit (0.1.0):
+    - businessBridge
+    - foundationKit
+  - foundationBridge (0.1.0)
+  - foundationBridgeImpl (0.1.0):
+    - foundationBridge
+  - foundationKit (0.1.0):
+    - foundationBridge
+
+DEPENDENCIES:
+  - businessBridge (from `./businessBridge`)
+  - businessBridgeImpl (from `./businessBridgeImpl`)
+  - businessKit (from `../kmp-local-repo/businessKit`)
+  - foundationBridge (from `./foundationBridge`)
+  - foundationBridgeImpl (from `./foundationBridgeImpl`)
+  - foundationKit (from `../kmp-local-repo/foundationKit`)
+
+EXTERNAL SOURCES:
+  businessBridge:
+    :path: "./businessBridge"
+  businessBridgeImpl:
+    :path: "./businessBridgeImpl"
+  businessKit:
+    :path: "../kmp-local-repo/businessKit"
+  foundationBridge:
+    :path: "./foundationBridge"
+  foundationBridgeImpl:
+    :path: "./foundationBridgeImpl"
+  foundationKit:
+    :path: "../kmp-local-repo/foundationKit"
+
+SPEC CHECKSUMS:
+  businessBridge: 8d640161edf159f3f1b486df6ba911cf81256fdd
+  businessBridgeImpl: 183e5634bb8f489a251da927f4abf285106e2988
+  businessKit: 798c869c16ba9ea7cd262759b7157ba55cd87b52
+  foundationBridge: 9d5cf2db801d0dc1b44d8bd3ad960ad291e17813
+  foundationBridgeImpl: 5757c0a7034194bd4b3715c5a481b23f8e8fcd43
+  foundationKit: 856404c20089f2786be1448478a2720b7f8c9dac
+
+PODFILE CHECKSUM: e2d5bf61806da9c358f45db8639c316cb0c7c9c5
+
+COCOAPODS: 1.16.2

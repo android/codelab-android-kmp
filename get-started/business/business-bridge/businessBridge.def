@@ -1,0 +1,16 @@
+# businessBridge.def
+#
+# Cinterop definition for the Business iOS bridge.
+# Declares the ObjC protocols that the iOS host application implements;
+# Kotlin code in businessKit calls into host-app-provided auth and network
+# capabilities via the generated bindings.
+#
+# The host app registers concrete implementations at startup:
+#   BusinessBridgeSetupKt.configureBusinessBridge(
+#       authDelegate: AppAuthDelegate(),
+#       networkDelegate: AppNetworkDelegate()
+#   )
+
+language = Objective-C
+headers = KMPBusinessBridgeAuth.h \
+          KMPBusinessBridgeNetwork.h

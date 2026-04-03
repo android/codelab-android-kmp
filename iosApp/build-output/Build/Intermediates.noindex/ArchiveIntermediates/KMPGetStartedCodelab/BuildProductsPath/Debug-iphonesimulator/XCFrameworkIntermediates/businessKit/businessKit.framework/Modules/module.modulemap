@@ -1,0 +1,5 @@
+framework module "businessKit" {
+    umbrella header "businessKit.h"
+    export *
+    module * { export * }
+}

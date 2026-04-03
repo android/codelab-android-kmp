@@ -1,0 +1,4 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/businessBridgeImpl.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/foundationBridgeImpl.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/businessKit.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/foundationKit.framework

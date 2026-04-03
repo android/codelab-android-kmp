@@ -1,0 +1,21 @@
+{
+  "name": "foundationBridge",
+  "version": "0.1.0",
+  "summary": "ObjC protocol headers for the KMP Foundation bridge",
+  "description": "Declares the ObjC protocols (KMPPlatformInfoProvider, KMPLoggerDelegate) that\nthe iOS host application must implement and register with foundationKit.\nfoundationKit.xcframework declares a dependency on this pod so that Clang\nsees full protocol definitions when the app imports foundationKit.",
+  "homepage": "https://github.com/example/kmp-get-started",
+  "license": {
+    "type": "Apache-2.0"
+  },
+  "authors": {
+    "KMP Team": "kmp@example.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "platforms": {
+    "ios": "14.0"
+  },
+  "source_files": "headers/*.h",
+  "public_header_files": "headers/*.h"
+}

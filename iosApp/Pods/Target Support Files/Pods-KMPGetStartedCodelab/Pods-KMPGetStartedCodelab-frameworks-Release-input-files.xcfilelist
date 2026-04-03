@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-KMPGetStartedCodelab/Pods-KMPGetStartedCodelab-frameworks.sh
+${BUILT_PRODUCTS_DIR}/businessBridgeImpl/businessBridgeImpl.framework
+${BUILT_PRODUCTS_DIR}/foundationBridgeImpl/foundationBridgeImpl.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/businessKit/businessKit.framework/businessKit
+${PODS_XCFRAMEWORKS_BUILD_DIR}/foundationKit/foundationKit.framework/foundationKit

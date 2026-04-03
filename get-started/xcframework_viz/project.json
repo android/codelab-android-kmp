@@ -1,0 +1,7 @@
+{
+  "name": "V3-prototype",
+  "frameworks": [
+    { "path": "../foundation/build/XCFrameworks/release/foundationKit.xcframework", "role": "foundation" },
+    { "path": "../business/build/XCFrameworks/release/businessKit.xcframework",     "role": "business"  }
+  ]
+}
