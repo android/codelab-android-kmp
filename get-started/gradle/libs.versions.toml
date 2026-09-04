@@ -16,14 +16,14 @@
 min-sdk = "26"
 target-sdk = "35"
 compile-sdk = "35"
-agp = "8.11.1"
-androidx-activityCompose = "1.10.1"
+agp = "9.4.0"
+androidx-activityCompose = "1.13.0"
 androidx-room = "2.6.1"
 androidx-lifecycle = "2.8.7"
 kotlin = "2.2.0"
 kotlinx-coroutines = "1.10.2"
-spotless = "7.2.1"
-composeBom = "2025.07.00"
+spotless = "8.10.2"
+composeBom = "2026.08.00"
 ktlint = "1.3.1"
 
 
